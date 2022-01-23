@@ -1,0 +1,18 @@
+.footer {
+  margin-top: auto;
+    background:#1C1E22;
+    width: 100;
+    position: relative;
+    margin-top: auto;
+  }
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#1C1E22;
+  height:75px;
+}
+.info > p {
+  margin: auto;
+}
+

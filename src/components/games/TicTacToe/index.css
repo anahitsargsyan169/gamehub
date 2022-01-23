@@ -1,0 +1,236 @@
+#versus_Computer {
+  height: 53px;
+  width: 53px;
+}
+/* tic-tac-toe-container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+} */
+.tic-tac-teo-header {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.tic-tac-toe-footer {
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.tic-tac-toe-footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white
+}
+.tic-tac-teo-header img {
+  margin: 20px;
+  cursor: pointer;
+}
+img:hover {
+  opacity: 0.6;
+}
+
+.tic-tac-teo-header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#userImage {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+}
+#board {
+  height: 360px;
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#board div {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: white;
+}
+.left {
+  border-right: 4px solid white;
+  box-sizing: border-box;
+}
+.right {
+  border-left: 4px solid white;
+  box-sizing: border-box;
+}
+.top {
+  border-bottom: 4px solid white;
+  box-sizing: border-box;
+}
+.bottom {
+  border-top: 4px solid white;
+  box-sizing: border-box;
+}
+svg {
+  opacity: 0.6;
+  align-items: center;
+}
+.win {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  100% {
+          opacity: 1;
+  }
+  30% {
+          opacity: 0;
+  }
+}
+#result {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  display: none;
+}
+.playerName {
+  color: white;
+  margin: auto;
+}
+.score {
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 35px;
+}
+/* span {
+  color: white;
+  margin: auto;
+} */
+.playerScore {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#notice {
+  font-size: 10px;
+  color: white;
+  height: 30px;
+}
+#timer {
+  color: white;
+  position:absolute;
+  font-size: 30px;
+  left: 50px;
+  top: 58px;
+}
+
+h4 {
+  color:white;
+  text-align: center;
+}
+
+.clicked {
+  opacity: 0.5;
+}
+
+.button {
+  position: relative;
+	display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 150px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+  filter: hue-rotate(0deg);
+  border: 2px solid #d2bdff;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  align-self: center;
+}
+.button:hover {
+  border: 1px solid transparent;
+  opacity: 0.8;
+  
+}
+.button:hover span {
+  position: absolute;
+  display: block;
+}
+.button:hover span:nth-child(1) {
+  filter: hue-rotate(0deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3a86ff);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+ }
+  50%, 100% {
+    left: 100%;
+ }
+}
+.button:hover span:nth-child(2) {
+  filter: hue-rotate(60deg);
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #3a86ff);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+ }
+  50%, 100% {
+    top: 100%;
+ }
+}
+.button:hover span:nth-child(3) {
+  filter: hue-rotate(120deg);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #3a86ff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+    height: 3px;
+ }
+  50%, 100% {
+    height: 2px;
+    right: 100%;
+ }
+}
+.button:hover span:nth-child(4) {
+  filter: hue-rotate(300deg);
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #3a86ff);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+ }
+  50%, 100% {
+    bottom: 100%;
+ }
+}

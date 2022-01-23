@@ -1,0 +1,96 @@
+.profile_container{
+    position: relative;
+    width: 75%;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.2); 
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+.profile_card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    width: 300px;
+    height: 450px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profile_info_body {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    width: 300px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.score_info {
+    margin-top: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    width: 300px;
+    height: 300px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.name_info{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.profile_card_body {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.profile_info_body {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.rounded_circle {
+border-radius: 50%;
+margin: 10px auto;
+width:150px;
+}
+
+.button_logout {
+	background: #fff;
+	font-size: 14px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: .2s;
+    border: 1px solid #e8d3d3;
+    color: #9d4848;
+	box-shadow: 0px 3px 3px #965656;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.button_logout:active,
+.button_logout:focus,
+.button_logout:hover {
+	border-color: #9e6767;
+    opacity: 0.95;
+	outline: none;
+}

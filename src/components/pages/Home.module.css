@@ -1,0 +1,67 @@
+h1 {
+  margin: 20px 0;
+  text-decoration: none;
+}
+.searchBox {
+  position: absolute;
+  right: 50px;
+  transform:  translate(0,50%);
+  background: #2A2E33;
+  height: 24px;
+  border-radius: 24px;
+  padding: 5px;
+  box-sizing: content-box;
+  border: 1px solid white;
+  margin-top: 15px;
+}
+
+.searchBox:hover > .searchInput, .searchInput:not(:placeholder-shown) {
+  right: 0;
+  width: 240px;
+  height: 24px;
+  padding: 0 8px;
+}
+
+.searchBox:hover > .searchButton{
+color : #2A2E33;
+}
+
+.searchButton {
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #2A2E33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: white;
+  font-size: 14px;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 0px;
+
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.material_icons {
+  height: 17px;
+}
+
+.games_content {
+  margin-top: 120px;
+}
