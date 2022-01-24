@@ -9,7 +9,7 @@
     text-align: left;
     background-color: rgba(255, 255, 255, 0.2); 
     flex-direction: row; 
-    justify-content: space-around; 
+    justify-content: space-between; 
     align-items: center; 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
@@ -17,17 +17,20 @@
 .profile_card {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
     width: 300px;
-    height: 450px;
+    height: 550px;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
     border: 0 solid rgba(0,0,0,.125);
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profile_info {
+    margin-right: 50px;
 }
 .profile_info_body {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
-    width: 300px;
+    width: 370px;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
@@ -38,7 +41,7 @@
 .score_info {
     margin-top: 20px;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
-    width: 300px;
+    width: 370px;
     height: 300px;
     word-wrap: break-word;
     background-color: #fff;

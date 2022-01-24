@@ -14,7 +14,7 @@ const Favorites = () => {
         <h1 className="title">Your Favorite Games</h1>
         </div>
         {totalFavorites === 0 ? (
-        <p className={styles.feedback}>No favorite games yet!</p>
+        <p className="text-center">No favorite games yet!</p>
         ) : (
         <GameList games={favorites} />
         )}

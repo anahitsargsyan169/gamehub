@@ -12,8 +12,10 @@ const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const container = useRef();
     const activeStyle = {
-            borderBottom: "4px solid white",
-            borderTop: "4px solid white",
+            // borderBottom: "3px solid white",
+            // borderTop: "3px solid white",
+            border: "3px solid white",
+            boxSizing: "border-box"
         };
 
     const handleClickOutside = e => {

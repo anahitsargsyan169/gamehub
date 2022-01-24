@@ -7,12 +7,19 @@
   }
 .info {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background:#1C1E22;
   height:75px;
 }
-.info > p {
-  margin: auto;
+
+.created {
+  margin-top: 3px;
 }
 
+.heart {
+  display: inline-block;
+  margin-bottom: -3px;
+  color: #ff0000;
+}

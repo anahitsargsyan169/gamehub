@@ -35,7 +35,7 @@
 
 
 div.menu_pane {
-  background-color: #22252e;
+  background-color: #1C1E22;
   position: absolute;
   height: 100%;
   width:90px;
@@ -119,13 +119,13 @@ nav {
   background: none;
 }
 .navLink:nth-child(1):hover ~ .background {
-  background: #5902ca;
+  background: #2702ca;
 }
 .navLink:nth-child(2):hover ~ .background {
   background: #5981C3;
 }
 .navLink:nth-child(3):hover ~ .background {
-  background: #0BDA99;
+  background: #3add91;
 }
 .navLink:nth-child(4):hover ~ .background {
   background: #8ee4af;
