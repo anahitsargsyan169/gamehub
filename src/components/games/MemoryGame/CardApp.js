@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import './CardApp.css'
 import SingleCard from './components/SingleCard/SingleCard'
 
 const cardImages=[
@@ -11,7 +11,7 @@ const cardImages=[
   {"src":"/img/sword-1.png",matched: false}
 ]
 
-function App() {
+function CardApp() {
   const [cards,setCards] =useState([])
   const [turns,setTurns] = useState(0)
 
@@ -95,4 +95,4 @@ useEffect(()=>{
   );
 }
 
-export default App
+export default CardApp

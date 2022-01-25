@@ -1,6 +1,6 @@
 
-import './index.css';
-import App from './App';
+import './index.module.css';
+import App from './CardApp';
 
 const MemoryGame=()=>{
   return <App/>
