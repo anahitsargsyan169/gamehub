@@ -12,6 +12,7 @@ import Login from "./components/pages/LogIn";
 import Profile from "./components/pages/Profile";
 import Game from "./components/pages/Game";
 import PrivateRoute from "./components/PrivateRoute";
+import MemoryGame from "./components/games/MemoryGame";
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
             <Route path="" element={<Favorites />} />
           </Route>
           <Route path="*" element={<NotFound />} />
-          <Route path="games/:path" element={<Game />} />
+          <Route path="games/TicTacToe" element={<Game />} />
+          <Route path="games/MemoryGame" element={<MemoryGame />} />
           {/* <Route path="/leaderboard" element={<PrivateRoute><Profile /></PrivateRoute>}/> */}
         </Routes>
       </Main>
