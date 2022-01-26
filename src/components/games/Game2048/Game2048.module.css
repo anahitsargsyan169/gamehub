@@ -1,0 +1,34 @@
+.controllPanel {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.scoreContainer {
+  display: flex;
+}
+
+.score {
+  color: white;
+  background: none;
+}
+
+.score div {
+  text-align: center;
+}
+
+.gameOverContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: #1c1e22; 
+}
+
+.gameOverContainer div {
+    margin-bottom: 10px;
+    color: white;
+}

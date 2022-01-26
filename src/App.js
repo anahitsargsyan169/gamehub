@@ -13,6 +13,7 @@ import Profile from "./components/pages/Profile";
 import Game from "./components/pages/Game";
 import PrivateRoute from "./components/PrivateRoute";
 import MemoryGame from "./components/games/MemoryGame";
+import Game2048 from "./components/games/Game2048/Game2048";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           {/* <Route path="games/:name" element={<Game />} /> */}
           <Route path="games/TicTacToe" element={<Game />} />
           <Route path="games/MemoryGame" element={<MemoryGame />} />
+          <Route path="games/Game2048" element={<Game2048 />} />
           {/* <Route path="/leaderboard" element={<PrivateRoute><Profile /></PrivateRoute>}/> */}
         </Routes>
       </Main>
