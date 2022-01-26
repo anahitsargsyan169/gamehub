@@ -2,6 +2,7 @@ import styles from "./Profile.module.css";
 import { useAuthState } from "../context/context";
 import {useNavigate} from "react-router-dom"
 import { getUser, removeUserSession } from "../storage";
+import Header from "../layout/Header";
 
 const Profile = () => {
     const {userHasAuthenticated, setUser} = useAuthState();
@@ -18,6 +19,7 @@ const Profile = () => {
 
     return (
         <>
+        <Header/>
         <div className={styles.profile_container}>
                 <div className={styles.profile_card}>
                     <div className={styles.profile_card_body}>
@@ -30,13 +32,13 @@ const Profile = () => {
                 </div>
                 <div className={styles.profile_info}>
                     <div className={styles.profile_info_body}>
-                            <h6>Username</h6>
+                            <h6>Username:</h6>
                             <p>{user.username}</p>
                         <hr/>
-                            <h6>E_mail</h6>
+                            <h6>E-mail:</h6>
                             <p>{user.email}</p>
                         <hr/>
-                            <h6>Birth</h6>
+                            <h6>Birth:</h6>
                             <p>{user.birth}</p>
                         <hr/>
                             <h6>Account created at:</h6>

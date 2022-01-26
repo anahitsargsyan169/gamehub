@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './CardApp.css'
+import styles from './CardApp.module.css'
 import SingleCard from './components/SingleCard/SingleCard'
 
 const cardImages=[
@@ -74,11 +74,11 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <h1>Magic Match</h1>
-       <button onClick={shuffleCards}>New Game</button>
+       <button className={styles.button} onClick={shuffleCards}>New Game</button>
 
-      <div className='card-grid'>
+      <div className={styles.card_grid}>
         {cards.map(card=>(
           <SingleCard 
              key={card.id} 

@@ -2,7 +2,9 @@
     margin: 20px 0;
     font-size: 2em;
 }
-
+.favorite {
+    margin-top: 120px
+}
 .favorite > p {
     margin-top: 50px;
 }

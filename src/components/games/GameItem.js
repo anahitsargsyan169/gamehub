@@ -16,7 +16,7 @@ const GameItem = ({ info }) => {
         <img className={styles.thumbnail} src={info.src} alt="test" />
         </Link>
         <div className={styles.card_body}>
-        <Link to={`/games/${info.id}`} className={styles.game_title}>
+        <Link to={`/games/${info.path}`} className={styles.game_title}>
             {info.title}
         </Link>
         <div className={styles.card_footer}>

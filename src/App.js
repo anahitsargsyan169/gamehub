@@ -33,6 +33,7 @@ function App() {
             <Route path="" element={<Favorites />} />
           </Route>
           <Route path="*" element={<NotFound />} />
+          {/* <Route path="games/:name" element={<Game />} /> */}
           <Route path="games/TicTacToe" element={<Game />} />
           <Route path="games/MemoryGame" element={<MemoryGame />} />
           {/* <Route path="/leaderboard" element={<PrivateRoute><Profile /></PrivateRoute>}/> */}

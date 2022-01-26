@@ -7,7 +7,7 @@ import styles from "./Main.css";
 const Layout = ({children}) => {
     return (
     <>
-    
+
         <MenuBar />
         <main className={styles.main_container}>{children}</main>
         <Footer />

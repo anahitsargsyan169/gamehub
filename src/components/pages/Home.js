@@ -3,6 +3,7 @@ import GameList from "../games/GameList";
 import { Debounce } from "../debounce";
 import search from "../images/search.png"
 import Carousel from "../Carousel";
+import Header from "../layout/Header";
 
 // styles
 import styles from "./Home.module.css";
@@ -40,22 +41,13 @@ const Home = () => {
   return (
 
     <div>
-      <div className={styles.head_section}>
-        <div className={styles.logo_div}>
-          <img src="./icon.png" className={styles.gamehub_icon} />
-          <h1 className={styles.pageName}>
-            GameHub
-          </h1>        
-        </div>
-        <div className={styles.searchBox}>
+              <Header />
+      <div className={styles.searchBox}>
             <input className={styles.searchInput} type="text" name="" onChange={(e) => setSearchTerm(e.target.value)} placeholder="Search for games"/>
             <button className={styles.searchButton}>
                 <img className={styles.material_icons} src={search} alt="search"/>
             </button>
         </div>
-        
-      </div>
-      
         <div>
             <Carousel/>
         </div>
