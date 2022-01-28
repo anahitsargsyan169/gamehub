@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import user from "../images/user.png";
 import lock from "../images/lock.png";
 import {useNavigate} from "react-router-dom"
-import { useAuthState } from "../context/context";
+import { useAuthState } from "../context/AuthContext";
 import { setUserSession } from '../storage';
 
 

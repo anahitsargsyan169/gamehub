@@ -7,7 +7,8 @@
     "name": "Gilmore Alston",
     "birth": "1990-07-05",
     "createdAt": "2013-07-04",
-    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar.png"
+    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar.png",
+    "scores":{"TicTacToe":"6","Millionaire":"5","Game2048":"5531","MemoryGame":"10","RockPaperScissors":"2"}
   },
   {
     "id": "61e714ba22403b374f9b6534",
@@ -17,7 +18,8 @@
     "name": "Weaver Riddle",
     "birth": "1994-09-12",
     "createdAt": "2014-04-08",
-    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar2.png"
+    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar2.png",
+    "scores":{"TicTacToe":"98","Millionaire":"1024","Game2048":"5423","MemoryGame":"3","RockPaperScissors":"25"}
   },
   {
     "id": "61e714ba103660a14fe83042",
@@ -27,7 +29,8 @@
     "name": "Shepard Morgan",
     "birth": "1988-05-31",
     "createdAt": "2012-11-08",
-    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar1.png"
+    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar1.png",
+    "scores":{"TicTacToe":"21","Millionaire":"35","Game2048":"1569","MemoryGame":"85","RockPaperScissors":"2"}
   },
   {
     "id": "61e714ba47ead73e93eda7bd",
@@ -37,7 +40,8 @@
     "name": "Lola Garcia",
     "birth": "1989-05-28",
     "createdAt": "2010-07-12",
-    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar3.png"
+    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar3.png",
+    "scores":{"TicTacToe":"42","Millionaire":"67","Game2048":"412","MemoryGame":"15","RockPaperScissors":"7"}
   },
   {
     "id": "61e714ba2a229f3095409afb",
@@ -47,6 +51,7 @@
     "name": "Patel Skinner",
     "birth": "1990-01-31",
     "createdAt": "2012-11-12",
-    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar04.png"
+    "avatar": "http://www.cham-sy.com/assets/dist/img/avatar04.png",
+    "scores":{"TicTacToe":"25","Millionaire":"52","Game2048":"885","MemoryGame":"121","RockPaperScissors":"5"}
   }
 ]

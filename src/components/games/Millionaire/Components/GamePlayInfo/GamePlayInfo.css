@@ -1,0 +1,144 @@
+.RoundTime{
+    font-size: 100px;
+    color: red;
+    font-weight: bold;
+    position: fixed;
+    left: 100px;
+    top: 55px;
+    margin: 0;
+    line-height: 0;
+}
+
+.UserMoney, .Timer, .Player, .ScoreP, .FixedMoney{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.Player{
+    position: relative;
+    overflow-y: hidden;
+}
+
+.Player span{
+    position: absolute;
+    padding: 0 0 0 10px;
+}
+
+
+.SMTControl{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 50px;
+}
+.SMTControl p{
+    margin-bottom: 0;
+}
+
+.SMTControl .NeonBTN{
+    width: 50%;
+    height: 50px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.Player::-webkit-scrollbar {
+    background-color: #ffffff00;
+    height: 1vh;
+}
+
+.Player::-webkit-scrollbar-track {
+    background-color: #ffffff00;
+}
+
+.Player::-webkit-scrollbar-thumb {
+    background-color: #ffffff20;
+}
+
+
+/*------Media------*/
+
+@media only screen and (max-width: 1320px){
+    .UserMoney, .Timer, .Player, .Score, .FixedMoney{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .UserMoney, .Timer, .Player, .Score, .FixedMoney{
+        font-size: 31px;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .UserMoney, .Timer, .Player, .Score, .FixedMoney{
+        font-size: 26.5px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .UserMoney, .Timer, .Player, .Score, .FixedMoney{
+        font-size: 20.5px;
+    }
+    .RoundTime{
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .UserMoney, .Timer, .Player, .Score, .FixedMoney{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .RoundTime{
+        font-size: 50px;
+    }
+    .SMTControl{
+        right: 20px;
+        top: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .UserMoney, .Timer, .Player, .Score, .FixedMoney{
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .RoundTime{
+        font-size: 35px;
+        left: 15px;
+        top: 40px;
+    }
+    .SMTControl{
+        right: 15px;
+        top: 15px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .UserMoney, .Timer, .Player, .Score, .FixedMoney{
+        font-size: 10px;
+    }
+    .RoundTime{
+        font-size: 20px;
+        left: 10px;
+        top: 35px;
+    }
+    .SMTControl{
+        right: 10px;
+        top: 10px;
+    }
+}

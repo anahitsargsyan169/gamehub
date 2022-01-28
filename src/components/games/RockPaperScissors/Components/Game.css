@@ -1,0 +1,102 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.GameStatus{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    padding: 25px;
+    text-shadow: 0 0 5px black;
+}
+
+.GameArea{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.BattleArena{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.window{
+    width: 250px;
+    height: 250px;
+    border: solid red;
+    border-radius: 10px;
+}
+
+.WindowSeparator{
+    width: 10px;
+    height: 150px;
+    background-color: darkred;
+}
+
+.Info{
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgba(235, 141, 34, 0.979);
+    text-shadow: 0 0 5px black;
+}
+
+.PlayerGameObjects{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.PlayerGameObjects img{
+    border: solid white;
+    margin: 10px;
+}
+
+.PlayerGameObjects .selected{
+    border: solid red;
+}
+
+.StartBtn{
+    padding: 8px 50px;
+    background-color: orangered;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    transition: .2s;
+    border: solid;
+    margin: 25px 0 0 0;
+}
+
+.StartBtn:hover{
+    background-color: orange;
+}
+
+.Score{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: orange;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Score span{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+}

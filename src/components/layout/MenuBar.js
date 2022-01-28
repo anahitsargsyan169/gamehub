@@ -6,7 +6,6 @@ import profile from "../images/profile.png";
 // styles
 import styles from "./MenuBar.module.css";
 import { useState, useRef, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
