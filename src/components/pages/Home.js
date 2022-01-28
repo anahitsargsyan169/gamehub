@@ -1,4 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
+
+import { useGamesContext } from "../context/GamesContext";
+
+
 import GameList from "../games/GameList";
 import { Debounce } from "../debounce";
 import search from "../images/search.png"
@@ -9,9 +13,11 @@ import Header from "../layout/Header";
 import styles from "./Home.module.css";
 
 const Home = () => {
-    const [allGames, setAllGames] = useState([]);
     const [filteredGames, setFilteredGames] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
+  
+    const { allGames, setAllGames } = useGamesContext();
+    
 
     useEffect(() => {
       fetch('./gamesData.json')
@@ -19,7 +25,6 @@ const Home = () => {
       .then((data) => {
           if(data){
             const games = [...data];
-            console.log(games);
             setAllGames(games);
           }
       })

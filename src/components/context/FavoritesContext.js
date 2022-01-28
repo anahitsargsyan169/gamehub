@@ -26,7 +26,6 @@ export default function FavoritesContextProvider({ children }) {
   });
 
   const gameIsFavorite = (gameId) => {
-    console.log("check")
     return favorites.some((favoriteGame) => favoriteGame.id === gameId);
   };
 

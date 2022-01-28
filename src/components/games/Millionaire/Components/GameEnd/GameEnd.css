@@ -1,0 +1,140 @@
+.GameEnd{
+    width: 40%;
+    background-color: #202020d4;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    border-radius: 20px;
+}
+
+.GameEnd h1{
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 25px;
+}
+
+.EndScore, .EndBal, .EndTimer{
+    text-align: center;
+}
+
+.EndScore, .EndBal, .EndPlayer, .EndTimer{
+    overflow-y: hidden;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: aqua;
+    text-transform: capitalize;
+}
+
+.EndPlayer{
+    margin-left: 30px;
+}
+
+.EndPlayer::-webkit-scrollbar {
+    background-color: #ffffff00;
+    height: 1vh;
+}
+
+.EndPlayer::-webkit-scrollbar-track {
+    background-color: #ffffff00;
+}
+
+.EndPlayer::-webkit-scrollbar-thumb {
+    background-color: #ffffff20;
+}
+
+.EndPlayer span{
+    position: absolute;
+    padding: 0 0 0 10px;
+}
+
+
+
+
+
+/*------Media------*/
+
+@media only screen and (max-width: 1320px){
+    .EndScore, .EndBal, .EndPlayer, .EndTimer{
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .EndScore, .EndBal, .EndPlayer, .EndTimer{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .EndScore, .EndBal, .EndPlayer, .EndTimer{
+        font-size: 22px;
+    }
+    .GameEnd{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .EndScore, .EndBal, .EndPlayer, .EndTimer{
+        font-size: 20px;
+    }
+    .GameEnd{
+        padding: 30px 50px;
+    }
+    .GameEnd button{
+        font-size: 22px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .EndScore, .EndBal, .EndPlayer, .EndTimer{
+        font-size: 18px;
+    }
+    .GameEnd h1{
+        font-size: 40px;
+    }
+    .GameEnd button{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .EndScore, .EndBal, .EndPlayer, .EndTimer{
+        font-size: 20px;
+    }
+    .GameEnd{
+        width: 80%;
+    }
+    .GameEnd h1{
+        font-size: 35px;
+    }
+    .GameEnd button{
+        font-size: 18px;
+    }
+    .EndPlayer{
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .EndScore, .EndBal, .EndPlayer, .EndTimer{
+        font-size: 16px;
+    }
+    .GameEnd{
+        padding: 20px 30px;
+    }
+    .GameEnd h1{
+        font-size: 30px;
+    }
+    .GameEnd button{
+        font-size: 16px;
+    }
+    .EndPlayer{
+        margin-left: 10px;
+    }
+}

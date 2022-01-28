@@ -1,0 +1,182 @@
+.GameHelpHall{
+    background-color: black;
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    border: solid white;
+    box-shadow: 0px 0px 100px aqua;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.HelpButtonsControl{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.GameHelpHall div{
+    width: 20%;
+    height: 100%;
+}
+
+.GameHelpHall div div{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    transform: rotate(180deg);
+}
+
+.GameHelpHall div div div{
+    width: 100%;
+    height: 1%;
+    background: linear-gradient(to left, purple, mediumpurple, purple);
+    box-shadow: 0px -5px 0px mediumpurple;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.GameHelpHall div p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.HallHelp, .FiftyFiftyHelp, .FriendHelp{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Img/Hall.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}
+
+.HallHelp span, .FiftyFiftyHelp span, .FriendHelp span{
+    color: red;
+    font-size: 50px;
+}
+
+.FiftyFiftyHelp{
+    background-image: url(Img/5050.png);
+    left: 150px;
+}
+
+.FriendHelp {
+    background-image: url(Img/Friend.jpg);
+    left: 250px;
+}
+
+.HallHelp:hover, .FiftyFiftyHelp:hover, .FriendHelp:hover{
+    border: solid red;
+}
+
+.HelpWindow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: #000000b3;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HelpWindow button{
+    width: 70%;
+    margin-top: 25px;
+}
+
+.AnimPhoneCallFriend{
+    background-image: url(Img/Phone.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: rotate(20deg);
+    width: 500px;
+    height: 500px;
+    animation: Phone 0.3s infinite;
+    position: relative;
+}
+
+@keyframes Phone {
+    0% {transform: rotate(20deg);}
+    50% {transform: rotate(60deg);}
+    100% {transform: rotate(20deg);}
+}
+
+.FriendHelpWindow, .HallHelpWindow{
+    width: 40%;
+    background-color: #202020e1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    border-radius: 20px;
+}
+
+.HallHelpWindow{
+    padding: 50px !important;
+}
+
+.FriendHelpWindow button{
+    width: 80%;
+}
+
+.FriendHelpWindow h1:nth-child(1){
+    color: aqua;
+    text-align: center;
+}
+
+.FriendHelpWindow h1:nth-child(2){
+    color: lime;
+    text-align: center;
+}
+
+
+/*------Media------*/
+
+
+@media only screen and (max-width: 768px){
+    .HallHelp, .FiftyFiftyHelp, .FriendHelp{
+        width: 50px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .HallHelp, .FiftyFiftyHelp, .FriendHelp{
+        width: 30px;
+        height: 15px;
+    }
+    .HelpButtonsControl{
+        right: 15px;
+        bottom: 15px;
+    }
+    .HallHelp span, .FiftyFiftyHelp span, .FriendHelp span{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .HelpButtonsControl{
+        right: 10px;
+        bottom: 10px;
+    }
+}

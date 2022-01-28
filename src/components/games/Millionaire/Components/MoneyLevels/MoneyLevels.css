@@ -1,0 +1,91 @@
+.Money{
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #00008b75;
+    font-weight: bold;
+}
+
+.Level{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.Money .LevelMoney{
+    width: 50%;
+    font-size: 18px;
+    color: orange;
+    text-align: center;
+}
+
+.Money .LevelIndex{
+    width: 50%;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.MoneyColorFalse{
+    background-color: red;
+}
+
+.MoneyColorTrue{
+    background-color: lime;
+}
+
+.MoneyColorAverage{
+    background-color: orange;
+}
+
+
+/*------Media------*/
+
+/*@media only screen and (max-width: 1320px){*/
+
+/*}*/
+
+/*@media only screen and (max-width: 1200px){*/
+
+/*}*/
+
+@media only screen and (max-width: 1150px){
+    .Money .LevelMoney, .Money .LevelIndex{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+
+}
+
+@media only screen and (max-width: 768px){
+    .Money .LevelMoney, .Money .LevelIndex{
+        font-size: 13.5px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .Money .LevelMoney, .Money .LevelIndex{
+        font-size: 9.9px;
+    }
+    .Money{
+        left: 15px;
+        bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .Money .LevelMoney, .Money .LevelIndex{
+        font-size: 5.5px;
+    }
+    .Money{
+        left: 10px;
+        bottom: 10px;
+    }
+}

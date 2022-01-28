@@ -1,0 +1,232 @@
+.LabelColorRed{
+    color: red !important;
+}
+
+.LabelColorAqua{
+    color: aqua !important;
+}
+
+.Start{
+    /* width: 40%; */
+    background-color: #202020e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    /*margin-top: 10vh;*/
+    border-radius: 20px;
+}
+
+.Start input{
+    width: 100%;
+    background-color: #484848;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.Start label{
+    width: 100%;
+    margin-top: 10px;
+    color: aqua;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Start button{
+    width: 100%;
+}
+
+.LeaderBoardWindow{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-color: #000000b3;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.LPCont{
+    width: 80%;
+    padding: 50px;
+    background-color: #20202096;
+    border-radius: 50px;
+}
+
+.LPCont button{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+}
+
+
+/*------Media------*/
+
+
+@media only screen and (max-width: 1500px){
+    .Start{
+        padding: 100px;
+    }
+    .Start button{
+        width: 80%;
+        font-size: 21.5px;
+    }
+    .Start label{
+        font-size: 20px;
+    }
+    .Start input{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1320px){
+    .Start{
+        padding: 100px;
+    }
+    .Start button{
+        width: 80%;
+        font-size: 21.5px;
+    }
+    .Start label{
+        font-size: 20px;
+    }
+    .Start input{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .Start{
+        padding: 100px;
+    }
+    .Start button{
+        width: 95%;
+    }
+    .Start label{
+        font-size: 19px;
+    }
+    .Start input{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .Start{
+        padding: 100px;
+    }
+    .Start button{
+        width: 100%;
+        font-size: 17.1px;
+    }
+    .Start label{
+        font-size: 15px;
+    }
+    .Start input{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .Start{
+        padding: 80px;
+    }
+    .Start button{
+        width: 100%;
+        padding: 15px;
+    }
+    .Start label{
+        font-size: 14.5px;
+    }
+}
+
+@media only screen and (max-width: 880px){
+    .Start{
+        width: 45%;
+        padding: 50px;
+    }
+    .Start button{
+        width: 100%;
+        padding: 13px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .Start{
+        width: 45%;
+        padding: 50px;
+    }
+    .Start button{
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+    .Start label{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .Start{
+        width: 55%;
+        padding: 50px;
+    }
+    .Start button{
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+    }
+    .Start label{
+        font-size: 9px;
+    }
+    .Start input{
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 412px){
+    .Start{
+        width: 55%;
+        padding: 15px;
+    }
+    .Start button{
+        font-size: 8px;
+        padding: 8px;
+    }
+    .Start label{
+        font-size: 7px;
+    }
+    .Start input{
+        font-size: 14px;
+        padding: 7px;
+    }
+}
+
+@media only screen and (max-width: 240px){
+    .Start{
+        width: 80%;
+        padding: 20px;
+    }
+    .Start button{
+        font-size: 12px;
+    }
+    .Start label{
+        font-size: 10px;
+    }
+    .Start input{
+        font-size: 15px;
+    }
+}

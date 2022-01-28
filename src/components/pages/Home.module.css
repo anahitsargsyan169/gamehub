@@ -3,7 +3,7 @@
 .searchBox {
   position: fixed;
   right: 50px;
-  transform:  translate(0,100%);
+  transform:  translate(0,50%);
   background: rgb(28,30,34);
   height: 24px;
   border-radius: 24px;

@@ -1,16 +1,21 @@
 import {useState} from 'react';
-import styles from "./Carousel.module.css";
+import { Link } from 'react-router-dom';
+
 import { AiOutlineArrowLeft,AiOutlineArrowRight } from "react-icons/ai";
 
+import { useGamesContext } from "./context/GamesContext";
+
+import styles from "./Carousel.module.css";
 
 const Carousel = () => {
 
     const [activeIndex, setActiveIndex] = useState(0);
+    const { allGames } = useGamesContext();
     
+    const shuffled = [...allGames];
+    const selected = shuffled.sort(() => 0.5 - Math.random()).slice(0, 3);
     const slides = [
-        "./xo.jpg",
-        "./mindgame.png",
-        "./rockpaper.jpeg",
+        "./xo.png",
         "./2048.png",
         "./millionaire.png"
     ];
@@ -63,7 +68,9 @@ const Carousel = () => {
                 : `${styles.carousel_slide}`
             }
             >
-            <img src={slide} className={styles.carousel_slide_content}></img>
+            <Link to={`/games/${slide.path}`} >
+                <img src={slide.src} className={styles.carousel_slide_content}></img>
+            </Link>
 
             </li>
         );
@@ -110,7 +117,7 @@ const Carousel = () => {
             <CarouselLeftArrow onClick={e => goToPrevSlide(e)} />
 
             <ul className={styles.carousel_slides}>
-                {slides.map((slide, index) =>
+                {selected.map((slide, index) =>
                 <CarouselSlide
                     key={index}
                     index={index}

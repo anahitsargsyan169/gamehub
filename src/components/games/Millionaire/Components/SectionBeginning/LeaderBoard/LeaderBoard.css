@@ -1,0 +1,131 @@
+.LeaderBoard{
+    width: 70%;
+    border-radius: 10%;
+    background-color: #202020e1;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.PlayersBoard{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.LeaderBoard h1{
+    color: gold;
+    text-align: center;
+    font-size: 50px;
+    padding: 0 0 50px 0;
+}
+
+.LeaderBoard p{
+    color: white;
+    line-height: 20px;
+    font-size: 30px;
+}
+
+
+/*------Media------*/
+
+@media only screen and (max-width: 1320px){
+    .LeaderBoard{
+
+    }
+    .LeaderBoard h1{
+
+    }
+    .LeaderBoard p{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .LeaderBoard{
+
+    }
+    .LeaderBoard h1{
+
+    }
+    .LeaderBoard p{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .LeaderBoard{
+
+    }
+    .LeaderBoard h1{
+
+    }
+    .LeaderBoard p{
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .LeaderBoard{
+        width: 70%;
+        padding: 25px 50px;
+    }
+    .LeaderBoard h1{
+        font-size: 40px;
+        padding: 0 0 40px 0;
+    }
+    .LeaderBoard p{
+        font-size: 16px;
+        line-height: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .LeaderBoard{
+        width: 70%;
+        padding: 25px 15px;
+    }
+    .LeaderBoard h1{
+        font-size: 28px;
+        padding: 0 0 35px 0;
+    }
+    .LeaderBoard p{
+        font-size: 14px;
+        line-height: 8px;
+    }
+}
+
+
+@media only screen and (max-width: 576px){
+    .LeaderBoard{
+        width: 100%;
+        padding: 25px 15px;
+    }
+    .LeaderBoard h1{
+        padding: 0 0 30px 0;
+    }
+    .LeaderBoard p{
+        font-size: 12.5px;
+        line-height: 5px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .LPCont{
+        width: 100%;
+    }
+    .LeaderBoard{
+        padding: 10px 5px;
+    }
+    .LeaderBoard h1{
+        font-size: 15px;
+        padding: 0 0 20px 0;
+    }
+    .LeaderBoard p{
+        font-size: 8px;
+        line-height: 0px;
+    }
+}

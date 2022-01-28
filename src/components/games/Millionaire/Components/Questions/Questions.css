@@ -1,0 +1,131 @@
+.question{
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+
+.question h1{
+    font-size: 35px;
+    margin-top: 25px;
+    background: linear-gradient(to bottom, #100763, #190937);
+    padding: 40px 25px;
+}
+
+.Answers{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Answers div{
+    width: 49%;
+    cursor: pointer;
+    border: solid 2px white;
+    padding: 20px;
+    background: linear-gradient(to bottom, #100763, #190937);
+    border-radius: 100%;
+    border-left: 40px solid;
+    border-right: 40px solid;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    color: white;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.true{
+    color: lime !important;
+}
+
+.false{
+    color: red !important;
+}
+
+.Average{
+    color: orange !important;
+}
+
+
+/*------Media------*/
+
+@media only screen and (max-width: 1200px){
+    .question h1{
+        font-size: 30px;
+    }
+    .Answers{
+        flex-direction: column;
+    }
+    .Answers div{
+        width: 80%;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .question h1{
+        font-size: 28px;
+    }
+    .Answers div{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .question h1{
+        font-size: 24px;
+    }
+    .Answers div{
+        width: 100%;
+        font-size: 25px;
+        border-left: 30px solid;
+        border-right: 30px solid;
+        padding: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .question h1{
+        font-size: 18px;
+    }
+    .Answers div{
+        font-size: 17px;
+        border-left: 25px solid;
+        border-right: 25px solid;
+        padding: 16px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .question h1{
+        font-size: 16px;
+    }
+    .Answers div{
+        font-size: 12px;
+        border-left: 15px solid;
+        border-right: 15px solid;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .question h1{
+        font-size: 12px;
+    }
+    .Answers div{
+        font-size: 5px;
+        border-left: 10px solid;
+        border-right: 10px solid;
+        padding: 2px;
+    }
+}
+
+@media only screen and (max-width: 240px){
+    .question h1{
+        font-size: 6px;
+        padding: 20px 10px;
+    }
+}

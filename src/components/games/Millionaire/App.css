@@ -1,0 +1,84 @@
+/* body::-webkit-scrollbar {
+    background: linear-gradient(purple, mediumpurple, rebeccapurple);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #ffffff00;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkblue;
+}
+
+body::-webkit-scrollbar-button{
+    padding: 25px;
+}
+
+body::-webkit-scrollbar-button:decrement:start {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Red_Arrow_Up.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+    background-color: darkblue;
+}
+
+body::-webkit-scrollbar-button:increment:end {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Red_Arrow_Down.svg/1024px-Red_Arrow_Down.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+    background-color: darkblue;
+} */
+
+
+.gameBody{
+    background: url("https://i.ytimg.com/vi/QjtdcMN_HmM/maxresdefault.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.section{
+    max-width: 1320px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.StartTimeoutWindow, .GameEndWindow{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left:0;
+    background-color: #000000b3;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.GameEndWindow{
+    background-color: #00000099;
+}
+
+.StartTimeoutWindow h1{
+    font-size: 500px;
+    background: -webkit-linear-gradient(red,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px 30px white;
+    animation: starttimeout 1s infinite;
+}
+
+@keyframes starttimeout{
+    to{font-size: 500px}
+    from{font-size: 0px}
+}

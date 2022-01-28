@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import {useState} from "react"
-import { AuthStateContext } from "./components/context/context";
+import {useState,useEffect} from "react"
+import { AuthStateContext } from "./components/context/AuthContext";
 import FavoritesContextProvider from "./components/context/FavoritesContext";
+import { GamesContext } from "./components/context/GamesContext";
 
 // pages & components
 import Home from "./components/pages/Home";
@@ -14,14 +15,30 @@ import Game from "./components/pages/Game";
 import PrivateRoute from "./components/PrivateRoute";
 import MemoryGame from "./components/games/MemoryGame";
 import Game2048 from "./components/games/Game2048/Game2048";
-
+import Leaderboard from "./components/pages/LeaderBoard/Leaderboard";
 
 function App() {
   const [isAuthenticated, userHasAuthenticated] = useState(false);
   const [user, setUser] = useState(undefined);
+  const [allGames, setAllGames] = useState([]);
+
+  useEffect(() => {
+    fetch('./gamesData.json')
+    .then((res) => res.json())
+    .then((data) => {
+        if(data){
+          const games = [...data];
+          setAllGames(games);
+        }
+    })
+    .catch(error => {
+        alert("Something went wrong. Please try again later.");
+    });
+  },[]);
 
   return (
     <AuthStateContext.Provider value={{ user, setUser, isAuthenticated, userHasAuthenticated }}>
+      <GamesContext.Provider value={{ allGames, setAllGames}}>
       <FavoritesContextProvider>
       <Main>
         <Routes>
@@ -34,14 +51,15 @@ function App() {
             <Route path="" element={<Favorites />} />
           </Route>
           <Route path="*" element={<NotFound />} />
-          {/* <Route path="games/:name" element={<Game />} /> */}
-          <Route path="games/TicTacToe" element={<Game />} />
+          <Route path="games/:name" element={<Game />} />
+          {/* <Route path="games/TicTacToe" element={<Game />} />
           <Route path="games/MemoryGame" element={<MemoryGame />} />
-          <Route path="games/Game2048" element={<Game2048 />} />
-          {/* <Route path="/leaderboard" element={<PrivateRoute><Profile /></PrivateRoute>}/> */}
+          <Route path="games/Game2048" element={<Game2048 />} /> */}
+          <Route path="/leaderboard" element={<Leaderboard />} />
         </Routes>
       </Main>
       </FavoritesContextProvider>
+      </GamesContext.Provider>
     </AuthStateContext.Provider>
   );
 }

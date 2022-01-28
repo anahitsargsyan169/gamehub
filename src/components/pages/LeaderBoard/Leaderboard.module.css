@@ -1,0 +1,104 @@
+.leaderboard{
+    color:white;
+    width: 550px;
+    margin:  auto;
+    margin-top: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 30px;
+}
+
+.leadHeader {
+    width: 100%;
+    text-align: center;
+}
+h2 {
+    margin: 0;
+    padding:20px
+}
+.username {
+    padding: 10px0 0;
+}
+.listHeader {
+    padding: 15px;
+    background: #32383e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.winner {
+    height: 40px;
+}
+
+.colheader {    
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+h4 {
+    font-size: 15px;
+    padding: 10px
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.filter label {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.filter select {
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    background: #32383e;
+    color: #ccc;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.12);
+}
+
+.filter option {
+    font-size: 1.5rem;
+}
+.table {
+    position: relative;
+    width: 450px;
+    text-align: center;
+}
+ /* {
+    text-align: -webkit-center;
+} */
+.listItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.listItem > span {
+    text-align: -webkit-center;
+}
+.rankSpan {
+    width: 50px;
+}
+.pointsSpan {
+    width: 100px;
+}
+.usernameSpan {
+    width: 200px;
+}
