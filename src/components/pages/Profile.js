@@ -4,12 +4,14 @@ import {useNavigate} from "react-router-dom"
 import { getUser, removeUserSession } from "../storage";
 import { useGamesContext } from "../context/GamesContext";
 import Header from "../layout/Header";
+import { Score } from "../ScoresLi";
 
 const Profile = () => {
     const {userHasAuthenticated, setUser} = useAuthState();
-    const { allGames, setAllGames } = useGamesContext();
+    const { allGames } = useGamesContext();
     const user = getUser();
     console.log(user);
+   //console.log(allGames)
     let history = useNavigate();
 
     const handleLogOut = () => {
@@ -48,18 +50,15 @@ const Profile = () => {
                     </div>
                     <div className={styles.score_info}>
                         <h3>Scores</h3>
-                        {/* <div>
+                        <div>
                         <ul>
                             {
-                                allGames.map((game)=>{
-                                    (<li className={styles.listItem}>
-                                        <span className={styles.gameSpan}><img src={game.src} alt="game"></img><p className={styles.game}>{game.mane}</p></span>
-                                        <span className={styles.pointsSpan}>{user.scores[game]}</span>
-                                    </li>)
-                                })
+                                allGames.map((game)=>
+                                    <Score key={game.id} game={game} user={user} />
+                                )
                             }
                         </ul>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
         </div>
