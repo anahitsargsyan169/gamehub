@@ -8,7 +8,7 @@
     "birth": "1990-07-05",
     "createdAt": "2013-07-04",
     "avatar": "http://www.cham-sy.com/assets/dist/img/avatar.png",
-    "scores":{"TicTacToe":"6","Millionaire":"5","Game2048":"5531","MemoryGame":"10","RockPaperScissors":"2"}
+    "scores":{"TicTacToe":"6", "TicTacToe2":"48","Millionaire":"5","Game2048":"5531","MemoryGame":"10","RockPaperScissors":"2"}
   },
   {
     "id": "61e714ba22403b374f9b6534",
@@ -19,7 +19,7 @@
     "birth": "1994-09-12",
     "createdAt": "2014-04-08",
     "avatar": "http://www.cham-sy.com/assets/dist/img/avatar2.png",
-    "scores":{"TicTacToe":"98","Millionaire":"1024","Game2048":"5423","MemoryGame":"3","RockPaperScissors":"25"}
+    "scores":{"TicTacToe":"98", "TicTacToe2":"6","Millionaire":"1024","Game2048":"5423","MemoryGame":"3","RockPaperScissors":"25"}
   },
   {
     "id": "61e714ba103660a14fe83042",
@@ -30,7 +30,7 @@
     "birth": "1988-05-31",
     "createdAt": "2012-11-08",
     "avatar": "http://www.cham-sy.com/assets/dist/img/avatar1.png",
-    "scores":{"TicTacToe":"21","Millionaire":"35","Game2048":"1569","MemoryGame":"85","RockPaperScissors":"2"}
+    "scores":{"TicTacToe":"21","TicTacToe2":"18","Millionaire":"35","Game2048":"1569","MemoryGame":"85","RockPaperScissors":"2"}
   },
   {
     "id": "61e714ba47ead73e93eda7bd",
@@ -41,7 +41,7 @@
     "birth": "1989-05-28",
     "createdAt": "2010-07-12",
     "avatar": "http://www.cham-sy.com/assets/dist/img/avatar3.png",
-    "scores":{"TicTacToe":"42","Millionaire":"67","Game2048":"412","MemoryGame":"15","RockPaperScissors":"7"}
+    "scores":{"TicTacToe":"42","TicTacToe2":"78","Millionaire":"67","Game2048":"412","MemoryGame":"15","RockPaperScissors":"7"}
   },
   {
     "id": "61e714ba2a229f3095409afb",
@@ -52,6 +52,6 @@
     "birth": "1990-01-31",
     "createdAt": "2012-11-12",
     "avatar": "http://www.cham-sy.com/assets/dist/img/avatar04.png",
-    "scores":{"TicTacToe":"25","Millionaire":"52","Game2048":"885","MemoryGame":"121","RockPaperScissors":"5"}
+    "scores":{"TicTacToe":"25","TicTacToe2":"61","Millionaire":"52","Game2048":"885","MemoryGame":"121","RockPaperScissors":"5"}
   }
 ]
