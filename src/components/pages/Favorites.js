@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import { FavoritesContext } from "../context/FavoritesContext";
+
 import GameList from "../games/GameList";
 import Header from '../layout/Header';
 
-
-// styles
 import styles from "./Favorites.module.css";
 
 const Favorites = () => {

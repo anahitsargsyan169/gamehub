@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { User } from "./pages/LeaderBoard/User";
-import styles from "./Pagination.module.css";
 import { AiOutlineArrowLeft,AiOutlineArrowRight } from "react-icons/ai";
+
+import { User } from "./User";
+
+import styles from "./Pagination.module.css";
 
 function Pagination({ data, game, pageLimit, dataLimit }) {
     const [pages] = useState(Math.ceil(data.length / dataLimit));

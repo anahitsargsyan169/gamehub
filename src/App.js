@@ -5,16 +5,14 @@ import FavoritesContextProvider from "./components/context/FavoritesContext";
 import { GamesContext } from "./components/context/GamesContext";
 
 // pages & components
-import Home from "./components/pages/Home";
+import Home from "./components/pages/Home/Home";
 import Favorites from "./components/pages/Favorites";
 import NotFound from "./components/pages/NotFound";
 import Main from "./components/layout/Main";
 import Login from "./components/pages/LogIn";
-import Profile from "./components/pages/Profile";
+import Profile from "./components/pages/Profile/Profile";
 import Game from "./components/pages/Game";
 import PrivateRoute from "./components/PrivateRoute";
-import MemoryGame from "./components/games/MemoryGame";
-import Game2048 from "./components/games/Game2048/Game2048";
 import Leaderboard from "./components/pages/LeaderBoard/Leaderboard";
 
 function App() {
@@ -23,7 +21,7 @@ function App() {
   const [allGames, setAllGames] = useState([]);
 
   useEffect(() => {
-    fetch('./gamesData.json')
+    fetch('https://mocki.io/v1/f71bd5dd-956c-4431-8a4c-9e6d482072ef')
     .then((res) => res.json())
     .then((data) => {
         if(data){
@@ -51,7 +49,9 @@ function App() {
             <Route path="" element={<Favorites />} />
           </Route>
           <Route path="*" element={<NotFound />} />
-          <Route path="games/:name" element={<Game />} />
+          <Route path="games/:name" element={<PrivateRoute />}>
+            <Route path="" element={<Game />} />
+          </Route>
           {/* <Route path="games/TicTacToe" element={<Game />} />
           <Route path="games/MemoryGame" element={<MemoryGame />} />
           <Route path="games/Game2048" element={<Game2048 />} /> */}

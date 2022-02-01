@@ -1,10 +1,11 @@
 import { useState } from "react";
-
 import { useGamesContext } from "../../context/GamesContext";
-import { UsersList } from "./List";
+
+import { UsersList } from "./UsersList";
+
 import styles from "./Leaderboard.module.css"
 
-export const Table = ({data}) => {
+export const Board = ({data}) => {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const {allGames} = useGamesContext();
     return (

@@ -1,4 +1,5 @@
 import Board from "./components/Board"
+
 import './index.css';
 
 const TicTacToe = () => {

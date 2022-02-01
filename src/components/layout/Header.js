@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// styles
+
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
           
         <div className={styles.logo_div}>
           <Link  to="/">
-            <img src="./icon.png" className={styles.gamehub_icon} alt="Logo"/>
+            <img src="./img/icon.png" className={styles.gamehub_icon} alt="Logo"/>
           </Link>
           <h1 className={styles.pageName}>
             GameHub

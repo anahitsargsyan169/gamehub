@@ -1,11 +1,12 @@
-import styles from "./LogIn.module.css";
 import React, { useState } from "react";
-import user from "../images/user.png";
-import lock from "../images/lock.png";
 import {useNavigate} from "react-router-dom"
 import { useAuthState } from "../context/AuthContext";
-import { setUserSession } from '../storage';
 
+import { setUserSession } from '../storage';
+import user from "../images/user.png";
+import lock from "../images/lock.png";
+
+import styles from "./LogIn.module.css";
 
 function Login() {
 
@@ -18,19 +19,17 @@ function Login() {
         const [userName, setUserName] = useState("");
         const [password, setPassword] = useState("");
         const [isFailed, setIsFailed] = useState(false);
-        //console.log(LoginsDB)
     
         function validateForm() {
             return userName.length > 3 && password.length > 3;
         }
 
         const checkData = (evt) => {
-            fetch('./data.json')
+            fetch('https://mocki.io/v1/a2b86227-b103-4055-b233-67447e330617')
             .then((res) => res.json())
             .then((data) => {
                 const users = [...data];
                 const user = users.filter(user=> userName.toLowerCase() === user.username && password === user.password);
-                console.log(user)
                 if(user.length){
                     userHasAuthenticated(true);
                     setUser(user[0]);
@@ -44,7 +43,6 @@ function Login() {
                 }
             })
             .catch(error => {
-                setIsFailed(true);
                 alert("Something went wrong. Please try again later.");
             });
         } 
