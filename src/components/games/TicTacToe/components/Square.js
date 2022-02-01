@@ -1,4 +1,5 @@
 import React from "react";
+
 import {ICON_TYPES} from "../constants/constants"
 
 const Square = ({turn, className}) => {

@@ -1,9 +1,7 @@
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
-
 import { AiOutlineArrowLeft,AiOutlineArrowRight } from "react-icons/ai";
-
-import { useGamesContext } from "./context/GamesContext";
+import { useGamesContext } from "../../context/GamesContext";
 
 import styles from "./Carousel.module.css";
 

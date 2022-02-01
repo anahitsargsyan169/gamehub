@@ -1,8 +1,8 @@
-import styles from "./ScoresLi.module.css"
 import { Link } from 'react-router-dom';
 
+import styles from "./Score.module.css"
+
 export const Score = ({user,game}) => {
-    console.log(user)
     return (
         <li className={styles.listItem}>
             <span className={styles.gameSpan}>

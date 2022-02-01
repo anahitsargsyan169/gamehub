@@ -1,7 +1,6 @@
 import Footer from "./Footer";
 import MenuBar from "./MenuBar";
 
-// styles
 import styles from "./Main.css";
 
 const Layout = ({children}) => {

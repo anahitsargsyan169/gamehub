@@ -1,37 +1,18 @@
-import { useState, useEffect, createContext } from "react";
+import { useState, useEffect } from "react";
+import { useGamesContext } from "../../context/GamesContext";
 
-import { useGamesContext } from "../context/GamesContext";
+import GameList from "../../games/GameList";
+import Carousel from "./Carousel";
+import Header from "../../layout/Header";
+import search from "../../images/search.png"
 
-
-import GameList from "../games/GameList";
-import { Debounce } from "../debounce";
-import search from "../images/search.png"
-import Carousel from "../Carousel";
-import Header from "../layout/Header";
-
-// styles
 import styles from "./Home.module.css";
 
 const Home = () => {
     const [filteredGames, setFilteredGames] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
   
-    const { allGames, setAllGames } = useGamesContext();
-    
-
-    useEffect(() => {
-      fetch('./gamesData.json')
-      .then((res) => res.json())
-      .then((data) => {
-          if(data){
-            const games = [...data];
-            setAllGames(games);
-          }
-      })
-      .catch(error => {
-          alert("Something went wrong. Please try again later.");
-      });
-    },[]);
+    const { allGames } = useGamesContext();
 
     useEffect(() => {
       if (searchTerm && allGames) {

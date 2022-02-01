@@ -1,6 +1,6 @@
-// styles
-import styles from "./GameList.module.css";
 import GameItem from "./GameItem";
+
+import styles from "./GameList.module.css";
 
 const GameList = ({ games }) => {
     return (

@@ -1,18 +1,18 @@
+
+import { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+
 import gamepad from "../images/gamepad.png";
 import love from "../images/love.png";
 import leaders from "../images/leaders.png";
 import profile from "../images/profile.png";
-// styles
+
 import styles from "./MenuBar.module.css";
-import { useState, useRef, useEffect } from "react";
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const container = useRef();
     const activeStyle = {
-            // borderBottom: "3px solid white",
-            // borderTop: "3px solid white",
             border: "3px solid white",
             boxSizing: "border-box"
         };

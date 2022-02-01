@@ -30,7 +30,6 @@ export default function FavoritesContextProvider({ children }) {
   };
 
   const addToFavorite = (game) => {
-    console.log("game add")
     if (gameIsFavorite(game.id)) {
       dispatch({ type: "REMOVE_FAVORITE", payload: game.id });
     } else {

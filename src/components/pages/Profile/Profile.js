@@ -1,17 +1,17 @@
-import styles from "./Profile.module.css";
-import { useAuthState } from "../context/AuthContext";
 import {useNavigate} from "react-router-dom"
-import { getUser, removeUserSession } from "../storage";
-import { useGamesContext } from "../context/GamesContext";
-import Header from "../layout/Header";
-import { Score } from "../ScoresLi";
+import { useAuthState } from "../../context/AuthContext";
+import { useGamesContext } from "../../context/GamesContext";
+
+import { getUser, removeUserSession } from "../../storage";
+import Header from "../../layout/Header";
+import { Score } from "./Score";
+
+import styles from "./Profile.module.css";
 
 const Profile = () => {
     const {userHasAuthenticated, setUser} = useAuthState();
     const { allGames } = useGamesContext();
     const user = getUser();
-    console.log(user);
-   //console.log(allGames)
     let history = useNavigate();
 
     const handleLogOut = () => {

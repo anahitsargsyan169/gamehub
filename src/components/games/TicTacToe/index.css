@@ -2,11 +2,7 @@
   height: 53px;
   width: 53px;
 }
-/* tic-tac-toe-container{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-} */
+
 .tic-tac-teo-header {
   width: 200px;
   display: flex;

@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
-import { WINNING_COMBOS, GAME_TYPES, PLAYER_X, PLAYER_O, switchPlayer, getRandomInt } from "../constants/constants";
+
+import { WINNING_COMBOS, GAME_TYPES, switchPlayer, getRandomInt } from "../constants/constants";
 import Header from "./Header";
 import Footer from "./Footer";
 import Square from "./Square";
 import minimax from "./minimax";
-
 
 const Board = () => {
     const [turn, setTurn] = useState("X");

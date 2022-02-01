@@ -1,14 +1,12 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AiFillHeart } from "react-icons/ai";
+import { FavoritesContext } from "../context/FavoritesContext";
 
-// styles
 import styles from "./GameItem.module.css";
 
- import { FavoritesContext } from "../context/FavoritesContext";
-
 const GameItem = ({ info }) => {
-     const { addToFavorite, gameIsFavorite } = useContext(FavoritesContext);
+    const { addToFavorite, gameIsFavorite } = useContext(FavoritesContext);
 
     return (
     <div className={styles.card}>

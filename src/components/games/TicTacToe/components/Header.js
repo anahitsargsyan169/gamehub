@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
+
 import { GAME_TYPES } from '../constants/constants';
 import user from '../user.png';
 import users from '../users.png';
-
-
 
 const Header = (props) => {
     const {TWO_PLAYERS, VERSUS_COMPUTER} = GAME_TYPES;

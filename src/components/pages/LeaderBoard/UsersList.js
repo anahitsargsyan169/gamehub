@@ -1,6 +1,6 @@
-import Pagination from "../../Pagination";
+import Pagination from "./Pagination";
+
 import styles from "./Leaderboard.module.css"
-import { User } from "./User";
 
 export const UsersList = ({game, data}) => {
     return (
